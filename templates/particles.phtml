@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Particle App</title>
+    <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            margin: 50px 0 0 0;
+            padding: 0;
+            width: 100%;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-align: center;
+            color: #2959dc;
+            font-size: 18px;
+        }
+
+        h1 {
+            color: #2959dc;
+            letter-spacing: -3px;
+            font-family: 'Lato', sans-serif;
+            font-size: 100px;
+            font-weight: 200;
+            text-align: center;
+            margin-bottom: 0;
+        }
+        h2 {
+            #2959dc;
+            letter-spacing: -1%px;
+            font-family: 'Lato', sans-serif;
+            font-size: 50%px;
+            font-weight: 200;
+            margin-bottom: 0;
+        button {
+            color: #fdffff;
+        }
+        }
+    </style>
+</head>
+<body>
+<h1>Particle Table</h1>
+<div></div>
+<table style = align="centre" , border="black", cellspacing="1">
+        <th width="30%">Particle Name</th>
+        <th width="15%">Charge</th>
+        <th width="10%">id</th>
+    </tr>
+    <tr>
+        <td>Proton</td>
+        <td>+1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Electron</td>
+        <td>-1</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>Neutron</td>
+        <td>0</td>
+        <td>3</td>
+    </tr>
+</table>
+<div></div>
+<form action="/particles" method="post">
+    New Particle<input name="particle1" type="text"></input>
+    <div></div>
+    Charge of Particle<input name="charge" type="number"></input><button>Add Particle</button>
+</form>
+</body>
+</html>

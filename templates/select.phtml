@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Selecting a Particle</title>
+    <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1></h1>
+<div></div>
+<?php
+//$db = new mysqli('192.168.20.56','dbuser','mayden4211','particles');
+//var_dump($db->connect_error);
+?>
+<div></div>
+    <form action="/select" method="post">
+        Select particles with Charge<input name="select_orig" type="number"></input><button>Select Particles</button>
+    </form>
+    <?php if($select_new !== ''){
+
+                if (count($results)> 0) {
+
+                    foreach($results as $result) {
+                        echo "id: " . $result["id"] . " - Particle: " . $result["Particle"] . " " . "- Charge:" . $result["Charge"] . "<br>";
+                    }
+                    echo "These are the particles with charge " . $select;
+                }
+                else {
+                    echo "0 results";
+                }
+        }
+    ?>
+</body>
+</html>

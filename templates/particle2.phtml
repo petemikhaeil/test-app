@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Inserting a Particle</title>
+    <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div></div>
+<form action="/particles" method="post">
+    New Particle<input name="particle1" type="text"></input>
+    <div></div>
+    Charge of Particle<input name="charge1" type="number"></input><button>Add Particle</button>
+</form>
+<?php
+
+    if($particle != '')
+    {
+        echo "You have added " . $particle . " with charge " . $charge;
+    }
+?>
+
+</body>
+</html>
